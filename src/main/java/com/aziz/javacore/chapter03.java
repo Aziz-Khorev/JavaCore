@@ -1,5 +1,5 @@
-package Aziz;
-public class chapter03 {
+package com.aziz.javacore;
+public class chapter03 {}
     // Вычислить расстояние , проходимое светом,
 // используя переменные типа long
     class Light {
@@ -20,7 +20,7 @@ public class chapter03 {
         }
     }
 
-}
+
 
 // Вычислить площадь круга
 class Area {
@@ -53,10 +53,10 @@ class CharDemo2 {
         char ch1;
 
         ch1 = 'Х';
-        System.out.println("chl содержит " + ch1);
+        System.out.println("ch1 содержит " + ch1);
 
         ch1++; // увеличить на единицу значение переменной chl
-        System.out.println("chl теперь содержит " + ch1);
+        System.out.println("ch1 теперь содержит " + ch1);
     }
 }
 
@@ -82,7 +82,7 @@ System.out.println("10 > 9 равно " + (10 > 9 ));
 }
 
 // В этом примере демонстрируе тся динамическая инициализация
-class Dyninit {
+class DynInit {
     public static void main(String args[]) {
         double a = 3.0, b = 4.0;
 // динамическая инициализация переменной с
@@ -128,13 +128,12 @@ class LifeTime {
 }
 
 
-// Скомпилировать эту прогамму нельзя
-class ScopeErr {
+//Скомпилировать эту программу нельзя
+class ScopeErr{
     public static void main(String[] args) {
         int bar = 1;
-        {                // создается новая область действия
-            int bar = 2; // ошибка во время компиляции
-            // переменная bar уже определена !
+        {                 // создается новая область действия
+            //int bar = 2;  // Ошибка во время компиляции - переменная bar уже определена!
         }
     }
 }
@@ -239,28 +238,26 @@ class TwoDArray {
 // Резервирование памяти вручную для массива с разной
 // размерностью второго измерения
 class TwoDAgain {
-    public static void main (String args[]) {
-        int twoD[][] = new int [4][];
-        twoD [0] new int [1];
-        twoD [1] new int [2];
-        twoD [2] new int [3];
-        twoD [3] new int [4];
+    public static void main(String args[]) {
+        int twoD[][] = new int[4][];
+        twoD[0] = new int[1];
+        twoD[1] = new int[2];
+        twoD[2] = new int[3];
+        twoD[3] = new int[4];
         int i, j, k = 0;
 
-        for(i=0; i < 4; i++)
-            for (j=0; j<i+1; j++) {
-                twoD[i] [j] = k;
+        for (i = 0; i < 4; i++) {
+            for (j = 0; j < i + 1; j++) {
+                twoD[i][j] = k;
                 k++;
             }
-        for (i=0; i<4; i++) {
-            for (j=0; j<i+1; j++)
-                System.out.print(twoD[i][j] + " " );
+            System.out.println(twoD[i][j] + " ");
             System.out.println();
         }
     }
 }
 
-// Инициализировать двухмерный ма ссив
+// Инициализировать двухмерный массив
 class Matrix {
     public static void main (String args[]) {
         double m[] [] = {

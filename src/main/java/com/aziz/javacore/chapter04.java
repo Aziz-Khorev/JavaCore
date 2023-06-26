@@ -1,5 +1,5 @@
-package Aziz;
-public class chapter04 {
+package com.aziz.javacore;
+public class chapter04 {}
     // Продемонстрировать основные арифметические операции
     class BasicMath {
         public static void main(String args[]) {
@@ -30,7 +30,7 @@ public class chapter04 {
             System.out.println("de = " + de);
         }
     }
-}
+
 
 
 // Продемонстрировать применение операции %
@@ -74,8 +74,8 @@ class IncDec {
         c++;
         System.out.println("a = " + a);
         System.out.println("b = " + b);
-        System.out.println("c = " + b);
-        System.out.println("d = " + c);
+        System.out.println("c = " + c);
+        System.out.println("d = " + d);
     }
 }
 
